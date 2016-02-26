@@ -4597,60 +4597,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="-55.88" y1="35.56" x2="-66.04" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AVR_AX0" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD2(INT0)"/>
-<wire x1="58.42" y1="71.12" x2="73.66" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A1"/>
-<wire x1="73.66" y1="71.12" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_AX1" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD3(INT1)"/>
-<wire x1="58.42" y1="68.58" x2="76.2" y2="68.58" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A2"/>
-<wire x1="76.2" y1="68.58" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_AX2" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD4(XCK/T0)"/>
-<wire x1="58.42" y1="66.04" x2="78.74" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A3"/>
-<wire x1="78.74" y1="66.04" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="78.74" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_AY0" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD5(T1)"/>
-<wire x1="58.42" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A4"/>
-<wire x1="81.28" y1="63.5" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_AY1" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD6(AIN0)"/>
-<wire x1="58.42" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A5"/>
-<wire x1="83.82" y1="60.96" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_AY2" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PD7(AIN1)"/>
-<wire x1="58.42" y1="58.42" x2="86.36" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A6"/>
-<wire x1="86.36" y1="58.42" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="Y7" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="Y7"/>
@@ -4897,24 +4843,6 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <wire x1="142.24" y1="20.32" x2="160.02" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="AVR_STROBE" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PC0(ADC0)"/>
-<wire x1="58.42" y1="99.06" x2="71.12" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A7"/>
-<wire x1="71.12" y1="99.06" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="AVR_DATA" class="0">
-<segment>
-<pinref part="U4" gate="U$1" pin="PC1(ADC1)"/>
-<wire x1="58.42" y1="96.52" x2="68.58" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="U5" gate="G$1" pin="A8"/>
-<wire x1="68.58" y1="96.52" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="119.38" y1="71.12" x2="96.52" y2="71.12" width="0.1524" layer="91"/>
@@ -5019,9 +4947,9 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <label x="43.18" y="-12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U4" gate="U$1" pin="PC2(ADC2)"/>
-<wire x1="58.42" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
-<label x="58.42" y="91.44" size="1.778" layer="95"/>
+<pinref part="U4" gate="U$1" pin="PD4(XCK/T0)"/>
+<wire x1="58.42" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<label x="60.96" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST8808V5" class="0">
@@ -5558,6 +5486,78 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="58.42" x2="-40.64" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-40.64" y1="30.48" x2="-41.91" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC0(ADC0)"/>
+<wire x1="58.42" y1="99.06" x2="73.66" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="99.06" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A1"/>
+<wire x1="73.66" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC1(ADC1)"/>
+<wire x1="58.42" y1="96.52" x2="76.2" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="96.52" x2="76.2" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A2"/>
+<wire x1="76.2" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC2(ADC2)"/>
+<wire x1="58.42" y1="93.98" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="93.98" x2="78.74" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A3"/>
+<wire x1="78.74" y1="101.6" x2="93.98" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC3(ADC3)"/>
+<wire x1="58.42" y1="91.44" x2="81.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="91.44" x2="81.28" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A4"/>
+<wire x1="81.28" y1="99.06" x2="93.98" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC4(ADC4/SDA)"/>
+<wire x1="58.42" y1="88.9" x2="83.82" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="88.9" x2="83.82" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A5"/>
+<wire x1="83.82" y1="96.52" x2="93.98" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PC5(ADC5/SCL)"/>
+<wire x1="58.42" y1="86.36" x2="86.36" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="86.36" x2="86.36" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A6"/>
+<wire x1="86.36" y1="93.98" x2="93.98" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PD2(INT0)"/>
+<wire x1="58.42" y1="71.12" x2="88.9" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="71.12" x2="88.9" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A7"/>
+<wire x1="88.9" y1="91.44" x2="93.98" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U4" gate="U$1" pin="PD3(INT1)"/>
+<wire x1="58.42" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="68.58" x2="91.44" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="A8"/>
+<wire x1="91.44" y1="88.9" x2="93.98" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
