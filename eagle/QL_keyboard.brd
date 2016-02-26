@@ -170,9 +170,10 @@
 <circle x="65.659" y="49.657" radius="0.683915625" width="0.254" layer="21"/>
 <text x="14.605" y="25.4" size="0.8128" layer="21" font="vector" ratio="20">3.3</text>
 <text x="53.467" y="30.861" size="1.4224" layer="21" font="vector" ratio="15">FTDI</text>
-<text x="40.894" y="3.429" size="1.4224" layer="22" font="vector" ratio="15" rot="MR0">USB Keyboard Adapter
+<text x="60.706" y="19.304" size="1.4224" layer="22" font="vector" ratio="15" rot="MR0">USB Keyboard Adapter
 For the Sinclair QL
 (c) 2016 Petri Pellinen
+https://github.com/ppe/QL_USB_Keyboard
 v 0.2</text>
 </plain>
 <libraries>
