@@ -7,9 +7,9 @@
 #include <SPI.h>
 #endif
 
-const byte strobe = A0;
-const byte data = A1;
-const byte reset = A2;
+const byte strobe = D2;
+const byte data = D3;
+const byte reset = D4;
 
 /*
  * USB keycode to switch matrix address translation table
@@ -30,10 +30,10 @@ const byte keyMapping[60] = {
 
 void setOutputOn(uint8_t keycode) {
   if(keycode > 3 && keycode < 60  && keyMapping[keycode] != 0xFF ) {
-    byte old = PORTD;
-    Serial.print("PORTD = " );
+    byte old = PORTC;
+    Serial.print("PORTC = " );
     Serial.println(old, HEX);
-    PORTD = (keyMapping[keycode] | (old & 3));
+    PORTC = (keyMapping[keycode] | (old & 0xC0));
     digitalWrite( data, HIGH );
     digitalWrite( strobe, HIGH );
     digitalWrite( strobe, LOW );
@@ -42,7 +42,7 @@ void setOutputOn(uint8_t keycode) {
 
 void setOutputOff(uint8_t keycode) {
   if(keycode > 3 && keycode < 60 && keyMapping[keycode] != 0xFF ) {
-    PORTD = (keyMapping[keycode] | (PORTD & 3));
+    PORTC = (keyMapping[keycode] | (PORTC & 0xC0));
     digitalWrite( data, LOW );
     digitalWrite( strobe, HIGH );
     digitalWrite( strobe, LOW );
@@ -157,7 +157,7 @@ void setup()
   digitalWrite( strobe, LOW );
   digitalWrite( data, LOW );
   
-  DDRD |= 0xFC; // Set D2-D7 to be output
+  DDRC |= 0x3F; // Set C0-C5 to be output
   
   Serial.begin( 9600 );
   Serial.println("Start");
