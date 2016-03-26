@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1088,15 +1088,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 <library name="ppe_custom">
 <packages>
-<package name="CRYSTAL-SMD-5X3.2">
-<description>http://www.mouser.com/ds/2/96/008-0360-0-786290.pdf</description>
-<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
-<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
-<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
-<smd name="1" x="-1.9" y="0" dx="1.8" dy="2.4" layer="1"/>
-<smd name="2" x="1.9" y="0" dx="1.8" dy="2.4" layer="1"/>
-</package>
 <package name="DIL40">
 <description>Dual In Line Package: 40-pin PDIP</description>
 <wire x1="26.1366" y1="7.112" x2="26.1366" y2="-7.112" width="0.1524" layer="21"/>
@@ -2688,24 +2679,17 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="-1.27" y="-5.08" size="0.4064" layer="27">&gt;Value</text>
 <text x="-6.35" y="-3.81" size="1.016" layer="48" rot="R90">Card edge</text>
 </package>
+<package name="CRYSTAL-SMD-5X3.2">
+<description>http://www.mouser.com/ds/2/96/008-0360-0-786290.pdf</description>
+<wire x1="-2.5" y1="1.6" x2="2.5" y2="1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.6" x2="2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.6" x2="-2.5" y2="-1.6" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-1.6" x2="-2.5" y2="1.6" width="0.127" layer="51"/>
+<smd name="1" x="-2.1" y="0" dx="2.2" dy="2.4" layer="1"/>
+<smd name="2" x="2.1" y="0" dx="2.2" dy="2.4" layer="1"/>
+</package>
 </packages>
 <symbols>
-<symbol name="Q">
-<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
-<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
-<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
-<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
-<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
-</symbol>
 <symbol name="DIL40">
 <wire x1="-5.08" y1="24.13" x2="-5.08" y2="-26.67" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-26.67" x2="5.08" y2="-26.67" width="0.254" layer="94"/>
@@ -2850,27 +2834,24 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <text x="0" y="9.525" size="1.778" layer="95">&gt;NAME</text>
 <text x="0" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="Q">
+<wire x1="1.016" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.016" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.381" y1="1.524" x2="-0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="-0.381" y1="-1.524" x2="0.381" y2="-1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="-1.524" x2="0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="0.381" y1="1.524" x2="-0.381" y2="1.524" width="0.254" layer="94"/>
+<wire x1="1.016" y1="1.778" x2="1.016" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="-1.016" y1="1.778" x2="-1.016" y2="-1.778" width="0.254" layer="94"/>
+<text x="2.54" y="1.016" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.159" y="-1.143" size="0.8636" layer="93">1</text>
+<text x="1.524" y="-1.143" size="0.8636" layer="93">2</text>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+</symbol>
 </symbols>
 <devicesets>
-<deviceset name="CRYSTAL-SMD">
-<description>CTS Model 445 SMD Quartz
-
-DS http://www.mouser.com/ds/2/96/008-0360-0-786290.pdf</description>
-<gates>
-<gate name="G$1" symbol="Q" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CRYSTAL-SMD-5X3.2">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="DIL40_SCKT">
 <gates>
 <gate name="G$1" symbol="DIL40" x="0" y="0"/>
@@ -3524,6 +3505,25 @@ Used, eg, on the Arduino Pro/ Pro Mini boards.&lt;br&gt;
 <connect gate="G$1" pin="D-" pad="USB_M"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VBUS" pad="5V"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CRYSTAL-SMD">
+<description>CTS Model 445 SMD Quartz
+
+DS http://www.mouser.com/ds/2/96/008-0360-0-786290.pdf</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CRYSTAL-SMD-5X3.2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4701,7 +4701,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="XTAL-12MHZ" library="ppe_custom" deviceset="CRYSTAL-SMD" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -4743,6 +4742,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="Y1" library="ppe_custom" deviceset="RESONATOR" device="8MHZ" value="8MHZ"/>
 <part name="COMMS" library="ppe_custom" deviceset="M02" device="PTH"/>
 <part name="J1" library="ppe_custom" deviceset="USB" device="-A-S"/>
+<part name="U$3" library="ppe_custom" deviceset="CRYSTAL-SMD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4776,7 +4776,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="SUPPLY4" gate="G$1" x="-86.36" y="123.19"/>
 <instance part="GND3" gate="1" x="-71.12" y="102.87"/>
 <instance part="SUPPLY5" gate="G$1" x="-33.02" y="123.19"/>
-<instance part="XTAL-12MHZ" gate="G$1" x="-44.45" y="-11.43"/>
 <instance part="GND4" gate="1" x="-44.45" y="-26.67"/>
 <instance part="GND5" gate="1" x="-7.62" y="38.1"/>
 <instance part="SUPPLY6" gate="G$1" x="88.9" y="119.38"/>
@@ -4818,6 +4817,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="Y1" gate="G$1" x="5.08" y="63.5"/>
 <instance part="COMMS" gate="G$1" x="86.36" y="-38.1"/>
 <instance part="J1" gate="G$1" x="-68.58" y="43.18" rot="R180"/>
+<instance part="U$3" gate="G$1" x="-44.45" y="-11.43"/>
 </instances>
 <busses>
 <bus name="Y[0..7]">
@@ -5654,13 +5654,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-34.29" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XTAL-12MHZ" gate="G$1" pin="1"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="-46.99" y1="-11.43" x2="-54.61" y2="-11.43" width="0.1524" layer="91"/>
 <wire x1="-54.61" y1="-11.43" x2="-54.61" y2="-13.97" width="0.1524" layer="91"/>
 <wire x1="-54.61" y1="-11.43" x2="-54.61" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-54.61" y="-11.43"/>
 <label x="-55.88" y="-6.35" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$3" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="MAX_X1" class="0">
@@ -5670,13 +5670,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-30.48" y="45.72" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="XTAL-12MHZ" gate="G$1" pin="2"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-41.91" y1="-11.43" x2="-34.29" y2="-11.43" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="-11.43" x2="-34.29" y2="-13.97" width="0.1524" layer="91"/>
 <wire x1="-34.29" y1="-11.43" x2="-34.29" y2="-2.54" width="0.1524" layer="91"/>
 <junction x="-34.29" y="-11.43"/>
 <label x="-35.56" y="-6.35" size="1.778" layer="95" rot="R90"/>
+<pinref part="U$3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$15" class="0">
