@@ -148,6 +148,7 @@ void setOutputState(uint8_t keycode, uint8_t mod, byte state) {
         byte addr = keySetting & 0x3F;
         setSwitch(addr, LOW);
       }
+      // TODO: Missing a "return" here?? if state==LOW will drop through to the else clause below?
     }
     if(specialKeyFlag == 0x80) { // If top two bits are '10' treat this key as a special combination key
       switchAddress1 = specialKeys[row][0];
